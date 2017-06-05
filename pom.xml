@@ -6,7 +6,12 @@
 
     <groupId>com.starlight</groupId>
     <artifactId>springcloud-demo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>springcloud-eurekaRegister</module>
+        <module>springcloud-eurekaServer</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -15,28 +20,17 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
-    </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Dalston.SR1</version>
+                <artifactId>spring-cloud-netflix</artifactId>
+                <version>1.3.1.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
+
     
 </project>
