@@ -11,6 +11,9 @@
     <modules>
         <module>springcloud-eurekaRegister</module>
         <module>springcloud-eurekaServer</module>
+        <module>springcloud-consumerRibbon</module>
+        <module>springcloud-eurekaServer2</module>
+        <module>springcloud-feign</module>
     </modules>
 
     <parent>
@@ -24,8 +27,8 @@
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix</artifactId>
-                <version>1.3.1.RELEASE</version>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR1</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
