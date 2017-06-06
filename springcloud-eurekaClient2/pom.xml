@@ -7,10 +7,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-eurekaServer2</artifactId>
+    <artifactId>springcloud-eurekaClient2</artifactId>
     <packaging>jar</packaging>
 
-    <name>springcloud-eurekaServer2</name>
+    <name>springcloud-eurekaClient2</name>
     <url>http://maven.apache.org</url>
 
     <properties>

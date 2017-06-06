@@ -10,7 +10,7 @@
     <artifactId>springcloud-eurekaServer</artifactId>
     <packaging>jar</packaging>
 
-    <name>springcloud-eurekaServer</name>
+    <name>springcloud-eurekaRegister</name>
     <url>http://maven.apache.org</url>
 
     <properties>
