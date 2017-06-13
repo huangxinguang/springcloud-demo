@@ -14,6 +14,8 @@
         <module>springcloud-ribbon</module>
         <module>springcloud-eurekaClient2</module>
         <module>springcloud-feign</module>
+        <module>springcloud-hystrix</module>
+        <module>springcloud-feignHystrix</module>
     </modules>
 
     <parent>
