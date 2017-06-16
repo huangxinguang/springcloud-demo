@@ -26,11 +26,8 @@ public class HelloController {
 
     @RequestMapping(value = "/hello" ,method = RequestMethod.GET)
     public String add(@RequestParam String name) {
-        List<ServiceInstance> instanceList = discoveryClient.getInstances("STORES");
-        for(ServiceInstance serviceInstance:instanceList) {
-            logger.info("/hello, host:" + serviceInstance.getHost() + ", service_id:" + serviceInstance.getServiceId() + ", hello:" + name);
-        }
-        logger.info("hello:"+name);
+        ServiceInstance instance = discoveryClient.getLocalServiceInstance();
+        logger.info("hello:"+name+" serviceId:"+instance.getServiceId()+" host:"+instance.getHost()+" port:"+instance.getPort());
         return "hello:"+name;
     }
 }
